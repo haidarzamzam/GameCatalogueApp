@@ -13,6 +13,8 @@
 		FA881FE724BB428F00FB1E2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA881FE524BB428F00FB1E2D /* Main.storyboard */; };
 		FA881FE924BB429300FB1E2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA881FE824BB429300FB1E2D /* Assets.xcassets */; };
 		FA881FEC24BB429300FB1E2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA881FEA24BB429300FB1E2D /* LaunchScreen.storyboard */; };
+		FA881FF424BB44D800FB1E2D /* RestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA881FF324BB44D800FB1E2D /* RestApi.swift */; };
+		FAE5B9C824BB526C003F3493 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5B9C724BB526C003F3493 /* GameModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FA881FE824BB429300FB1E2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA881FEB24BB429300FB1E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA881FED24BB429300FB1E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA881FF324BB44D800FB1E2D /* RestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApi.swift; sourceTree = "<group>"; };
+		FAE5B9C724BB526C003F3493 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		FA881FDE24BB428F00FB1E2D /* GameCatalogueApp */ = {
 			isa = PBXGroup;
 			children = (
-				FA881FDF24BB428F00FB1E2D /* AppDelegate.swift */,
-				FA881FE124BB428F00FB1E2D /* SceneDelegate.swift */,
-				FA881FE324BB428F00FB1E2D /* ViewController.swift */,
-				FA881FE524BB428F00FB1E2D /* Main.storyboard */,
-				FA881FE824BB429300FB1E2D /* Assets.xcassets */,
-				FA881FEA24BB429300FB1E2D /* LaunchScreen.storyboard */,
 				FA881FED24BB429300FB1E2D /* Info.plist */,
+				FA881FE824BB429300FB1E2D /* Assets.xcassets */,
+				FA881FF524BB44F000FB1E2D /* Base */,
+				FA881FF624BB450800FB1E2D /* Controller */,
+				FA881FF824BB451A00FB1E2D /* Model */,
+				FA881FF924BB454800FB1E2D /* Network */,
+				FA881FF724BB451100FB1E2D /* View */,
 			);
 			path = GameCatalogueApp;
+			sourceTree = "<group>";
+		};
+		FA881FF524BB44F000FB1E2D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FA881FDF24BB428F00FB1E2D /* AppDelegate.swift */,
+				FA881FE124BB428F00FB1E2D /* SceneDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FA881FF624BB450800FB1E2D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA881FE324BB428F00FB1E2D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA881FF724BB451100FB1E2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA881FEA24BB429300FB1E2D /* LaunchScreen.storyboard */,
+				FA881FE524BB428F00FB1E2D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA881FF824BB451A00FB1E2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAE5B9C724BB526C003F3493 /* GameModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA881FF924BB454800FB1E2D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FA881FF324BB44D800FB1E2D /* RestApi.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +184,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE5B9C824BB526C003F3493 /* GameModel.swift in Sources */,
+				FA881FF424BB44D800FB1E2D /* RestApi.swift in Sources */,
 				FA881FE424BB428F00FB1E2D /* ViewController.swift in Sources */,
 				FA881FE024BB428F00FB1E2D /* AppDelegate.swift in Sources */,
 				FA881FE224BB428F00FB1E2D /* SceneDelegate.swift in Sources */,
