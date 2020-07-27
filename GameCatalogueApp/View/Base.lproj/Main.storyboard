@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EwK-g3-6Nm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EwK-g3-6Nm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -10,7 +10,7 @@
         <!--Catalogue Game-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GameCatalogueApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GameController" customModule="GameCatalogueApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,13 +30,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Catalogue Game" id="lhy-2a-QUe">
-                        <barButtonItem key="rightBarButtonItem" title="About" id="jOP-Xa-2mD">
+                        <barButtonItem key="rightBarButtonItem" title="􀅵" id="jOP-Xa-2mD">
                             <connections>
                                 <segue destination="yja-Sh-wxQ" kind="presentation" id="HU0-44-NNM"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="gameTableView" destination="Xx5-uB-jfb" id="aI8-XE-ewX"/>
                         <segue destination="OQB-CU-xxc" kind="show" identifier="openDetail" id="EXt-Dw-dCZ"/>
                     </connections>
                 </viewController>
@@ -59,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="1019" y="778"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail Game Controller-->
         <scene sceneID="GG0-qW-92h">
             <objects>
-                <viewController id="OQB-CU-xxc" sceneMemberID="viewController">
+                <viewController id="OQB-CU-xxc" customClass="DetailGameController" customModule="GameCatalogueApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dvz-QT-GRC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
